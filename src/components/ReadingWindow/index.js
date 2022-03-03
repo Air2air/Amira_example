@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react'
-import {motion} from 'framer-motion/dist/framer-motion'
+import {motion} from 'framer-motion'
 import ReadingWindowItem from '../ReadingWindowItem'
 import './index.scss'
 
@@ -37,7 +37,7 @@ const ReadingWindow = () => (
     }}
     className="reading-wrapper"
   >
-    {mockData.slice(0, 1).map(item => (
+    {mockData.slice(2, 3).map(item => (
       <ReadingWindowItem key={item.id} {...item} />
     ))}
   </motion.div>

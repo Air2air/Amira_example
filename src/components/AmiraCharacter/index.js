@@ -1,4 +1,4 @@
-import {motion} from 'framer-motion/dist/framer-motion'
+import {motion} from 'framer-motion'
 import amira from '../../assets/images/amira.png'
 import './index.scss'
 

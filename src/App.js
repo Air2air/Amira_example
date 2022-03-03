@@ -1,4 +1,4 @@
-import {motion} from 'framer-motion/dist/framer-motion'
+import {motion} from 'framer-motion'
 import NavBar from './components/NavBar'
 import AmiraCharacter from './components/AmiraCharacter'
 import ReadingWindow from './components/ReadingWindow'
