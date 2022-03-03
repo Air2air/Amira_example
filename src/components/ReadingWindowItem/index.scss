@@ -11,16 +11,43 @@ $padding: 26px;
   padding: 40px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;;
   align-items: center;
   background: #fff;
   border-radius: 6px;
-  font-size: 26px;
-  color: rgb(32, 89, 165);
+
   // background: red;
 }
 
+$description-section-height: 100px;
+
+.description-section {
+  font-size: 18px;
+  color: rgb(56, 56, 56);
+  height: $description-section-height;
+  // background: red;
+}
+
+$content-section-height: 130px;
+
+.content-section {
+  font-size: 24px;
+  color: rgb(51, 128, 230);
+  font-weight: bold;
+  letter-spacing: 0.03em;
+  height: $content-section-height;
+}
+
 $button-size: 50px;
+
+.button-row {
+  height: $button-size;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  // background: gold;
+}
 
 .button {
   pointer-events: all;
@@ -40,5 +67,11 @@ $button-size: 50px;
   transition: all 0.2s ease-in-out;
   &:hover {
     background: #49a57a;
+  }
+  &.back {
+    background: #5cb9d0;
+    &:hover {
+      background: #4990a5;
+    }
   }
 }
