@@ -13,11 +13,16 @@ const mockData = [
     title: 'Next thing',
     text: 'More Text here',
   },
+  {
+    id: 2,
+    title: 'And another Next thing',
+    text: 'Even More Text here',
+  },
 ]
 
 const ReadingWindow = () => (
   <div className="reading-wrapper">
-    {mockData.map(item => (
+    {mockData.slice(0, 1).map(item => (
       <ReadingWindowItem key={item.id} {...item} />
     ))}
   </div>
