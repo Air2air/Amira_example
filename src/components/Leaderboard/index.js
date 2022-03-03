@@ -8,7 +8,7 @@ const Leaderboard = () => (
     animate={{x: 0, opacity: 1}}
     transition={{
       ease: 'easeOut',
-      delay: 1.2,
+      delay: 1.6,
       duration: 0.6,
     }}
     className="leaderboard-wrapper"
