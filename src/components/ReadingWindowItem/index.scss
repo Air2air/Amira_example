@@ -1,0 +1,16 @@
+/* Write your code here. */
+
+$screen-width: 600px;
+$screen-height:508px;
+$padding: 26px;
+
+.reading-screen {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  border-radius: 6px;
+  // background: red;
+}

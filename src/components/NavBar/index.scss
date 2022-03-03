@@ -1,0 +1,16 @@
+$logo-size: 130px;
+$navbar-height: 80px;
+
+.navbar-container {
+  position: relative;
+  height: $navbar-height;
+  padding: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  background: #203060;
+}
+
+.amira-logo {
+  width: $logo-size;
+}
