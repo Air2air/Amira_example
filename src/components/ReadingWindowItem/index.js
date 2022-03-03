@@ -28,14 +28,18 @@ const ReadingWindowItem = () => {
   const [sliceOne, setSliceOne] = useState(0)
   const [sliceTwo, setSliceTwo] = useState(1)
 
-  const handleNext = () => {
-    setSliceOne(sliceOne + 1)
-    setSliceTwo(sliceTwo + 1)
-  }
-
   const handleStartOver = () => {
     setSliceOne(0)
     setSliceTwo(1)
+  }
+
+  const handleNext = () => {
+    if (sliceTwo < mockData.length) {
+      setSliceOne(sliceOne + 1)
+      setSliceTwo(sliceTwo + 1)
+    } else {
+      handleStartOver()
+    }
   }
 
   return mockData.slice(sliceOne, sliceTwo).map(item => (
@@ -69,7 +73,7 @@ const ReadingWindowItem = () => {
           handleStartOver()
         }}
       >
-        Begin
+        Start Over
       </button>
     </motion.div>
   ))
