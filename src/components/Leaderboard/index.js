@@ -7,7 +7,8 @@ const Leaderboard = () => (
     initial={{x: '10vw', opacity: 0}}
     animate={{x: 0, opacity: 1}}
     transition={{
-      ease: 'easeOut',
+      type: 'spring',
+      bounce: 0.4,
       delay: 1.6,
       duration: 0.6,
     }}

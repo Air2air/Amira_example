@@ -1,0 +1,22 @@
+$button-size: 50px;
+
+.button {
+  width: auto;
+  height: $button-size;
+  z-index:1;
+  font-family: 'Didact Gothic', sans-serif;
+  font-weight: bold;
+  letter-spacing: 0.03em;
+
+  border-radius: $button-size;
+  border: none;
+  padding:0 35px;
+  background: #5cd09a;
+  cursor: pointer;
+  font-size: 22px;
+  color: #fff;
+  transition: all 0.2s ease-in-out;
+  &:hover {
+    background: #49a57a;
+  }
+}

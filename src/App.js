@@ -10,12 +10,11 @@ const App = () => (
     <div className="outer-container">
       <motion.div
         layout
-        initial={{opacity: 0}}
-        animate={{opacity: 1}}
+        animate={{opacity: [0, 1]}}
         transition={{
           ease: 'easeOut',
           delay: 0.1,
-          duration: 3,
+          duration: 0.5,
         }}
         className="frame"
       />

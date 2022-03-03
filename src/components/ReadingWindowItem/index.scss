@@ -1,17 +1,21 @@
 /* Write your code here. */
 
 $screen-width: 600px;
-$screen-height:508px;
+$screen-height: 508px;
 $padding: 26px;
 
 .reading-screen {
+  font-family: 'Didact Gothic', sans-serif;
   width: 100%;
   height: 100%;
+  padding: 40px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background: #fff;
   border-radius: 6px;
+  font-size: 26px;
+  color: rgb(32, 89, 165);
   // background: red;
 }
