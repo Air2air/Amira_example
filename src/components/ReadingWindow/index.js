@@ -1,29 +1,6 @@
-import React, {useState, useEffect} from 'react'
 import {motion} from 'framer-motion'
 import ReadingWindowItem from '../ReadingWindowItem'
 import './index.scss'
-
-const mockData = [
-  {
-    id: 0,
-    title: 'Duck is Stuck',
-    text:
-      'Duck is stuck in the muck.  A pup can tug on the duck. But duck is stuck. A cub can tug on Duck.',
-    buttonText: 'Read More',
-  },
-  {
-    id: 1,
-    title: 'Next thing',
-    text: 'More Text here',
-    buttonText: 'Read More',
-  },
-  {
-    id: 2,
-    title: 'And another Next thing',
-    text: 'Even More Text here',
-    buttonText: 'Read More',
-  },
-]
 
 const ReadingWindow = () => (
   <motion.div
@@ -37,9 +14,7 @@ const ReadingWindow = () => (
     }}
     className="reading-wrapper"
   >
-    {mockData.slice(2, 3).map(item => (
-      <ReadingWindowItem key={item.id} {...item} />
-    ))}
+    <ReadingWindowItem />
   </motion.div>
 )
 
